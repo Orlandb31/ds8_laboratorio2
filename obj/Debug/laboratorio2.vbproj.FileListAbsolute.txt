@@ -1,0 +1,16 @@
+C:\Users\mathe\source\repos\laboratorio2\bin\Debug\laboratorio2.exe.config
+C:\Users\mathe\source\repos\laboratorio2\bin\Debug\laboratorio2.exe
+C:\Users\mathe\source\repos\laboratorio2\bin\Debug\laboratorio2.pdb
+C:\Users\mathe\source\repos\laboratorio2\bin\Debug\laboratorio2.xml
+C:\Users\mathe\source\repos\laboratorio2\obj\Debug\laboratorio2.vbproj.AssemblyReference.cache
+C:\Users\mathe\source\repos\laboratorio2\obj\Debug\laboratorio2.Form1.resources
+C:\Users\mathe\source\repos\laboratorio2\obj\Debug\laboratorio2.Resources.resources
+C:\Users\mathe\source\repos\laboratorio2\obj\Debug\laboratorio2.vbproj.GenerateResource.cache
+C:\Users\mathe\source\repos\laboratorio2\obj\Debug\laboratorio2.vbproj.CoreCompileInputs.cache
+C:\Users\mathe\source\repos\laboratorio2\obj\Debug\laboratorio2.exe
+C:\Users\mathe\source\repos\laboratorio2\obj\Debug\laboratorio2.xml
+C:\Users\mathe\source\repos\laboratorio2\obj\Debug\laboratorio2.pdb
+C:\Users\mathe\source\repos\laboratorio2\obj\Debug\laboratorio2.frmarreglo.resources
+C:\Users\mathe\source\repos\laboratorio2\obj\Debug\laboratorio2.frmmatrices.resources
+C:\Users\mathe\source\repos\laboratorio2\obj\Debug\laboratorio2.frmregistrar.resources
+C:\Users\mathe\source\repos\laboratorio2\obj\Debug\laboratorio2.frmretiro.resources
