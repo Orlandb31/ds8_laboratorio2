@@ -54,11 +54,11 @@ Partial Class frmregistrar
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(513, 4)
+        Me.Button1.Location = New System.Drawing.Point(54, 331)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Informe"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Label2
@@ -101,7 +101,7 @@ Partial Class frmregistrar
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(12, 196)
+        Me.Label6.Location = New System.Drawing.Point(12, 256)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(49, 13)
         Me.Label6.TabIndex = 6
@@ -110,7 +110,7 @@ Partial Class frmregistrar
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(11, 275)
+        Me.Label7.Location = New System.Drawing.Point(13, 290)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(31, 13)
         Me.Label7.TabIndex = 7
@@ -119,7 +119,7 @@ Partial Class frmregistrar
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(120, 226)
+        Me.ComboBox1.Location = New System.Drawing.Point(126, 218)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
         Me.ComboBox1.TabIndex = 8
@@ -127,7 +127,7 @@ Partial Class frmregistrar
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(12, 229)
+        Me.Label8.Location = New System.Drawing.Point(11, 226)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(102, 13)
         Me.Label8.TabIndex = 9
@@ -136,7 +136,7 @@ Partial Class frmregistrar
         'RadioButton1
         '
         Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(48, 271)
+        Me.RadioButton1.Location = New System.Drawing.Point(89, 286)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.Size = New System.Drawing.Size(31, 17)
         Me.RadioButton1.TabIndex = 10
@@ -147,7 +147,7 @@ Partial Class frmregistrar
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(85, 271)
+        Me.RadioButton2.Location = New System.Drawing.Point(140, 286)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(34, 17)
         Me.RadioButton2.TabIndex = 11
@@ -157,14 +157,14 @@ Partial Class frmregistrar
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(63, 95)
+        Me.TextBox1.Location = New System.Drawing.Point(126, 95)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(93, 20)
         Me.TextBox1.TabIndex = 12
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(63, 129)
+        Me.TextBox2.Location = New System.Drawing.Point(126, 129)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(48, 20)
         Me.TextBox2.TabIndex = 13
@@ -178,7 +178,7 @@ Partial Class frmregistrar
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(68, 196)
+        Me.TextBox3.Location = New System.Drawing.Point(126, 249)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 20)
         Me.TextBox3.TabIndex = 15
@@ -186,7 +186,7 @@ Partial Class frmregistrar
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(15, 322)
+        Me.Label9.Location = New System.Drawing.Point(12, 197)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(84, 13)
         Me.Label9.TabIndex = 16
@@ -194,7 +194,7 @@ Partial Class frmregistrar
         '
         'DateTimePicker2
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(126, 316)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(126, 190)
         Me.DateTimePicker2.Name = "DateTimePicker2"
         Me.DateTimePicker2.Size = New System.Drawing.Size(200, 20)
         Me.DateTimePicker2.TabIndex = 17
@@ -222,7 +222,7 @@ Partial Class frmregistrar
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmregistrar"
         Me.Text = "frmregistrar"
         Me.ResumeLayout(False)
