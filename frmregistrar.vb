@@ -19,12 +19,13 @@
         txtTotal60.Text = Total_clientes_mayores60()
         txtTotalm25.Text = Total_clientes_menores25()
         txtTotalC.Text = Total_clientes()
-        txtP1.Text = Total_clientes_porcentajeT1()
-        txtP2.Text = Total_clientes_porcentajeT2()
-        txtP3.Text = Total_clientes_porcentajeT3()
+        txtP1.Text = Total_clientes_porcentajeT1() & "%"
+        txtP2.Text = Total_clientes_porcentajeT2() & "%"
+        txtP3.Text = Total_clientes_porcentajeT3() & "%"
     End Sub
     Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
         Dim nombre, tipo, telefono, sexo As String
+        Dim fecha1, fecha2 As Date
         Dim edad, dias, tp As Integer
         nombre = txtNombre.Text()
         tipo = cboTratamiento.SelectedItem.ToString()
@@ -44,12 +45,9 @@
             MsgBox("Debe elegir un sexo")
         End If
         edad = Val(txtEdad.Text)
-        'Dim dates = DateDiff(DateInterval.Day, dtpFechaI, dtpFechaS)
-
-        'Dim bln As Boolean = Integer.TryParse(dates, dias)
-        'If bln = False Then
-        'MsgBox("error al calcular la fecha")
-        'Else
+        fecha1 = dtpFechaI.Value.ToShortDateString
+        fecha2 = dtpFechaS.Value.ToShortDateString
+        dias = DateDiff(DateInterval.Day, fecha1, fecha2)
         If dias >= 5 Then
                 MsgBox("El cliente spa tiene derecho a un día de tratamiento gratis en cualquiera de los otros tipos de tratamiento de menor costo. ")
             End If
@@ -80,5 +78,14 @@
         txtP1.Hide()
         txtP2.Hide()
         txtP3.Hide()
+    End Sub
+    Private Sub txtEdad_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtEdad.KeyPress
+        If Char.IsDigit(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+        Else
+            e.Handled = True
+        End If
     End Sub
 End Class
