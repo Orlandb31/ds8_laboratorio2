@@ -29,4 +29,3 @@ C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio2\obj\Debug\laboratorio
 C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio2\obj\Debug\laboratorio2.exe
 C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio2\obj\Debug\laboratorio2.xml
 C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio2\obj\Debug\laboratorio2.pdb
-C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio2\obj\Debug\laboratorio2.vbproj.AssemblyReference.cache
