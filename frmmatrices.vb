@@ -36,7 +36,7 @@ Public Class frmmatrices
                         dgvprincipal.Rows(i).Cells(j).Value = 15
                     ElseIf (i + j = tamaño - 1) Then
                         dgvsecundaria.Rows(i).Cells(j).Value = 28
-                    End If
+                        End If
                 Next
             Next
 
@@ -55,6 +55,10 @@ Public Class frmmatrices
         dgvprincipal.Rows.Clear()
         dgvsecundaria.Columns.Clear()
         dgvsecundaria.Rows.Clear()
+
+    End Sub
+
+    Private Sub frmmatrices_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class
