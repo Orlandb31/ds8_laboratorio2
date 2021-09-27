@@ -17,97 +17,125 @@
         indi2 = tipos.Length()
         If indi2 = 1 Then
             tipos(indi2 - 1) = ti
-            ReDim Preserve edad(indi2)
-        ElseIf indi2 > 1 Then
+            ReDim Preserve tipos(indi2)
+        ElseIf indi2 <> 1 Then
             tipos(indi2 - 1) = ti
-            ReDim Preserve edad(indi2)
+            ReDim Preserve tipos(indi2)
         End If
     End Sub
     Public Function Total_clientes_mayores60() As Integer
-        Dim i As Integer
+        Dim i, iin As Integer
         Dim v As Integer
         v = 0
-        For i = 0 To edad.Length() - 2
-            If edad(i) >= 60 Then
-                v += 1
-            End If
-        Next
+        iin = edad.Length()
+        If edad(iin - 1) = 0 Then
+            For i = 0 To iin - 2
+                If edad(i) >= 60 Then
+                    v += 1
+                End If
+            Next
+        Else
+            For i = 0 To iin - 1
+                If edad(i) >= 60 Then
+                    v += 1
+                End If
+            Next
+        End If
         Return v
     End Function
     Public Function Total_clientes_mayores25() As Integer
+        Dim i, iin As Integer
         Dim v As Integer
-        Dim i As Integer
         v = 0
-        For i = 0 To edad.Length() - 2
-            If edad(i) >= 25 And edad(i) < 60 Then
-                v += 1
-            End If
-        Next
+        iin = edad.Length()
+        If edad(iin - 1) = 0 Then
+            For i = 0 To iin - 2
+                If edad(i) >= 25 And edad(i) < 60 Then
+                    v += 1
+                End If
+            Next
+        Else
+            For i = 0 To iin - 1
+                If edad(i) >= 25 And edad(i) < 60 Then
+                    v += 1
+                End If
+            Next
+        End If
         Return v
     End Function
     Public Function Total_clientes_menores25() As Integer
-        Dim i As Integer
+        Dim i, iin As Integer
         Dim v As Integer
         v = 0
-        For i = 0 To edad.Length() - 2
-            If edad(i) < 25 Then
-                v += 1
-            End If
-        Next
+        iin = edad.Length()
+        If edad(iin - 1) = 0 Then
+            For i = 0 To iin - 2
+                If edad(i) < 25 Then
+                    v += 1
+                End If
+            Next
+        Else
+            For i = 0 To iin - 1
+                If edad(i) < 25 Then
+                    v += 1
+                End If
+            Next
+        End If
         Return v
     End Function
     Public Function Total_clientes() As Integer
-        Dim i As Integer
+        Dim i, iin As Integer
         Dim v As Integer
         v = 0
-        For i = 0 To edad.Length() - 2
-            v += 1
-        Next
+        iin = edad.Length()
+        If edad(iin - 1) = 0 Then
+            For i = 0 To iin - 2
+                v += 1
+            Next
+        Else
+            For i = 0 To iin - 1
+                v += 1
+            Next
+        End If
         Return v
     End Function
     Public Function Total_clientes_porcentajeT1() As Double
         Dim i, c, t As Integer
         Dim v As Double
         c = 0
-        t = 0
+        t = tipos.Length() - 1
         For i = 0 To tipos.Length() - 1
             If tipos(i) = 1 Then
                 c += 1
             End If
-            t += 1
         Next
-        v = c * t / 100
-        v = v * 100
+        v = (c * 100) / t
         Return v
     End Function
     Public Function Total_clientes_porcentajeT2() As Double
         Dim i, c, t As Integer
         Dim v As Double
         c = 0
-        t = 0
+        t = tipos.Length() - 1
         For i = 0 To tipos.Length() - 1
             If tipos(i) = 2 Then
                 c += 1
             End If
-            t += 1
         Next
-        v = c * t / 100
-        v = v * 100
+        v = (c * 100) / t
         Return v
     End Function
     Public Function Total_clientes_porcentajeT3() As Double
         Dim i, c, t As Integer
         Dim v As Double
         c = 0
-        t = 0
+        t = tipos.Length() - 1
         For i = 0 To tipos.Length() - 1
             If tipos(i) = 3 Then
                 c += 1
             End If
-            t += 1
         Next
-        v = c * t / 100
-        v = v * 100
+        v = (c * 100) / t
         Return v
     End Function
 End Module
