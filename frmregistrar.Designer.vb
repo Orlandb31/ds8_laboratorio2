@@ -175,6 +175,7 @@ Partial Class frmregistrar
         'txtNombre
         '
         Me.txtNombre.Location = New System.Drawing.Point(126, 95)
+        Me.txtNombre.MaxLength = 20
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(200, 20)
         Me.txtNombre.TabIndex = 12
@@ -182,12 +183,14 @@ Partial Class frmregistrar
         'txtEdad
         '
         Me.txtEdad.Location = New System.Drawing.Point(126, 129)
+        Me.txtEdad.MaxLength = 3
         Me.txtEdad.Name = "txtEdad"
         Me.txtEdad.Size = New System.Drawing.Size(48, 20)
         Me.txtEdad.TabIndex = 13
         '
         'dtpFechaI
         '
+        Me.dtpFechaI.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtpFechaI.Location = New System.Drawing.Point(126, 164)
         Me.dtpFechaI.Name = "dtpFechaI"
         Me.dtpFechaI.Size = New System.Drawing.Size(200, 20)
@@ -196,6 +199,7 @@ Partial Class frmregistrar
         'txtTelefono
         '
         Me.txtTelefono.Location = New System.Drawing.Point(126, 249)
+        Me.txtTelefono.MaxLength = 32
         Me.txtTelefono.Name = "txtTelefono"
         Me.txtTelefono.Size = New System.Drawing.Size(100, 20)
         Me.txtTelefono.TabIndex = 15
@@ -211,6 +215,7 @@ Partial Class frmregistrar
         '
         'dtpFechaS
         '
+        Me.dtpFechaS.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtpFechaS.Location = New System.Drawing.Point(126, 190)
         Me.dtpFechaS.Name = "dtpFechaS"
         Me.dtpFechaS.Size = New System.Drawing.Size(200, 20)

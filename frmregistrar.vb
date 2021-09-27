@@ -15,7 +15,13 @@
         txtP1.Show()
         txtP2.Show()
         txtP3.Show()
-
+        txtTotal25.Text = Total_clientes_mayores25()
+        txtTotal60.Text = Total_clientes_mayores60()
+        txtTotalm25.Text = Total_clientes_menores25()
+        txtTotalC.Text = Total_clientes()
+        txtP1.Text = Total_clientes_porcentajeT1()
+        txtP2.Text = Total_clientes_porcentajeT2()
+        txtP3.Text = Total_clientes_porcentajeT3()
     End Sub
     Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
         Dim nombre, tipo, telefono, sexo As String
@@ -38,13 +44,18 @@
             MsgBox("Debe elegir un sexo")
         End If
         edad = Val(txtEdad.Text)
-        dias = DateDiff("d", dtpFechaI, dtpFechaS)
+        'Dim dates = DateDiff(DateInterval.Day, dtpFechaI, dtpFechaS)
+
+        'Dim bln As Boolean = Integer.TryParse(dates, dias)
+        'If bln = False Then
+        'MsgBox("error al calcular la fecha")
+        'Else
         If dias >= 5 Then
-            MsgBox("El cliente spa tiene derecho a un día de tratamiento gratis en 
-            cualquiera de los
-            otros tipos de tratamiento de menor costo. ")
-        End If
-        Cargar_Matriz(edad, tp)
+                MsgBox("El cliente spa tiene derecho a un día de tratamiento gratis en cualquiera de los otros tipos de tratamiento de menor costo. ")
+            End If
+        'End If
+        Cargar_Edad(edad)
+        Cargar_tipos(tp)
         txtNombre.Clear()
         txtEdad.Clear()
         txtTelefono.Clear()
