@@ -8,6 +8,7 @@ Public Class frmmatrices
     Private Sub txtdim_Validating(sender As Object, e As CancelEventArgs) Handles txtdim.Validating
         If DirectCast(sender, TextBox).Text.Length > 0 Then
             Me.errordim.SetError(sender, "")
+            lblmensaje.Text = ""
         Else
             Me.errordim.SetError(sender, "Valor en blanco")
         End If
@@ -55,6 +56,7 @@ Public Class frmmatrices
         dgvprincipal.Rows.Clear()
         dgvsecundaria.Columns.Clear()
         dgvsecundaria.Rows.Clear()
+        lblmensaje.Text = ""
 
     End Sub
 

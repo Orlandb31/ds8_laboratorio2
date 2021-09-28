@@ -27,39 +27,54 @@
         Dim nombre, tipo, telefono, sexo As String
         Dim fecha1, fecha2 As Date
         Dim edad, dias, tp As Integer
-        nombre = txtNombre.Text()
-        tipo = cboTratamiento.SelectedItem.ToString()
-        If "Tratamiento Básico" = tipo Then
-            tp = 1
-        ElseIf "Tratamiento Intermedio" = tipo Then
-            tp = 2
-        ElseIf "Tratamiento Premium" = tipo Then
-            tp = 3
-        End If
-        telefono = txtTelefono.Text()
-        If rbtSexoF.Checked() = True Then
-            sexo = "F"
-        ElseIf rbtSexoM.Checked() = True Then
-            sexo = "M"
-        Else
-            MsgBox("Debe elegir un sexo")
-        End If
-        edad = Val(txtEdad.Text)
-        fecha1 = dtpFechaI.Value.ToShortDateString
-        fecha2 = dtpFechaS.Value.ToShortDateString
-        dias = DateDiff(DateInterval.Day, fecha1, fecha2)
-        If dias >= 5 Then
-                MsgBox("El cliente spa tiene derecho a un día de tratamiento gratis en cualquiera de los otros tipos de tratamiento de menor costo. ")
+
+        Try
+            If txtNombre.Text() = String.Empty Or txtTelefono.Text() = String.Empty Or cboTratamiento.SelectedItem = Nothing Then
+                MsgBox("no se puede dejar campos vacios")
+            Else
+                nombre = txtNombre.Text()
+                telefono = txtTelefono.Text()
+                edad = Val(txtEdad.Text)
+                fecha1 = dtpFechaI.Value.ToShortDateString
+                fecha2 = dtpFechaS.Value.ToShortDateString
+                tipo = cboTratamiento.SelectedItem.ToString()
+
+                Select Case tipo
+                    Case "Tratamiento Básico"
+                        tp = 1
+                    Case "Tratamiento Intermedio"
+                        tp = 2
+                    Case "Tratamiento Premium"
+                        tp = 3
+                End Select
+                dias = DateDiff(DateInterval.Day, fecha1, fecha2)
+                If dias >= 5 Then
+                    MsgBox("El cliente spa tiene derecho a un día de tratamiento gratis en cualquiera de los otros tipos de tratamiento de menor costo. ")
+                End If
             End If
-        'End If
-        Cargar_Edad(edad)
-        Cargar_tipos(tp)
-        txtNombre.Clear()
-        txtEdad.Clear()
-        txtTelefono.Clear()
-        dtpFechaI.ResetText()
-        dtpFechaS.ResetText()
-        cboTratamiento.ResetText()
+
+
+            If rbtSexoF.Checked() = True Then
+                sexo = "F"
+            ElseIf rbtSexoM.Checked() = True Then
+                sexo = "M"
+            Else
+                MsgBox("Debe elegir un sexo")
+                Return
+            End If
+
+            Cargar_Edad(edad)
+            Cargar_tipos(tp)
+            txtNombre.Clear()
+            txtEdad.Clear()
+            txtTelefono.Clear()
+            dtpFechaI.ResetText()
+            dtpFechaS.ResetText()
+            cboTratamiento.ResetText()
+        Catch ex As Exception
+            Console.WriteLine(ex)
+        End Try
+
     End Sub
 
     Private Sub frmregistrar_Load(sender As Object, e As EventArgs) Handles MyBase.Load

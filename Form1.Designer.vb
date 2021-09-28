@@ -24,12 +24,12 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.Problema1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Problema2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Problema3ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Problema4ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RetirosYDepositosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Problema2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RegistrarClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Problema3ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MatricesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Problema4ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ArregloToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -40,7 +40,8 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Problema1ToolStripMenuItem, Me.Problema2ToolStripMenuItem, Me.Problema3ToolStripMenuItem, Me.Problema4ToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(971, 28)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1013, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -48,62 +49,63 @@ Partial Class Form1
         '
         Me.Problema1ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RetirosYDepositosToolStripMenuItem})
         Me.Problema1ToolStripMenuItem.Name = "Problema1ToolStripMenuItem"
-        Me.Problema1ToolStripMenuItem.Size = New System.Drawing.Size(104, 24)
+        Me.Problema1ToolStripMenuItem.Size = New System.Drawing.Size(83, 20)
         Me.Problema1ToolStripMenuItem.Text = "Problema#1"
+        '
+        'RetirosYDepositosToolStripMenuItem
+        '
+        Me.RetirosYDepositosToolStripMenuItem.Name = "RetirosYDepositosToolStripMenuItem"
+        Me.RetirosYDepositosToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
+        Me.RetirosYDepositosToolStripMenuItem.Text = "Retiros y depositos"
         '
         'Problema2ToolStripMenuItem
         '
         Me.Problema2ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistrarClientesToolStripMenuItem})
         Me.Problema2ToolStripMenuItem.Name = "Problema2ToolStripMenuItem"
-        Me.Problema2ToolStripMenuItem.Size = New System.Drawing.Size(108, 24)
+        Me.Problema2ToolStripMenuItem.Size = New System.Drawing.Size(86, 20)
         Me.Problema2ToolStripMenuItem.Text = "Problema #2"
+        '
+        'RegistrarClientesToolStripMenuItem
+        '
+        Me.RegistrarClientesToolStripMenuItem.Name = "RegistrarClientesToolStripMenuItem"
+        Me.RegistrarClientesToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.RegistrarClientesToolStripMenuItem.Text = "Registrar Clientes"
         '
         'Problema3ToolStripMenuItem
         '
         Me.Problema3ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MatricesToolStripMenuItem})
         Me.Problema3ToolStripMenuItem.Name = "Problema3ToolStripMenuItem"
-        Me.Problema3ToolStripMenuItem.Size = New System.Drawing.Size(108, 24)
+        Me.Problema3ToolStripMenuItem.Size = New System.Drawing.Size(86, 20)
         Me.Problema3ToolStripMenuItem.Text = "Problema #3"
+        '
+        'MatricesToolStripMenuItem
+        '
+        Me.MatricesToolStripMenuItem.Name = "MatricesToolStripMenuItem"
+        Me.MatricesToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.MatricesToolStripMenuItem.Text = "Matrices"
         '
         'Problema4ToolStripMenuItem
         '
         Me.Problema4ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArregloToolStripMenuItem})
         Me.Problema4ToolStripMenuItem.Name = "Problema4ToolStripMenuItem"
-        Me.Problema4ToolStripMenuItem.Size = New System.Drawing.Size(108, 24)
+        Me.Problema4ToolStripMenuItem.Size = New System.Drawing.Size(86, 20)
         Me.Problema4ToolStripMenuItem.Text = "Problema #4"
-        '
-        'RetirosYDepositosToolStripMenuItem
-        '
-        Me.RetirosYDepositosToolStripMenuItem.Name = "RetirosYDepositosToolStripMenuItem"
-        Me.RetirosYDepositosToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
-        Me.RetirosYDepositosToolStripMenuItem.Text = "Retiros y depositos"
-        '
-        'RegistrarClientesToolStripMenuItem
-        '
-        Me.RegistrarClientesToolStripMenuItem.Name = "RegistrarClientesToolStripMenuItem"
-        Me.RegistrarClientesToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
-        Me.RegistrarClientesToolStripMenuItem.Text = "Registrar Clientes"
-        '
-        'MatricesToolStripMenuItem
-        '
-        Me.MatricesToolStripMenuItem.Name = "MatricesToolStripMenuItem"
-        Me.MatricesToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
-        Me.MatricesToolStripMenuItem.Text = "Matrices"
         '
         'ArregloToolStripMenuItem
         '
         Me.ArregloToolStripMenuItem.Name = "ArregloToolStripMenuItem"
-        Me.ArregloToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.ArregloToolStripMenuItem.Size = New System.Drawing.Size(113, 22)
         Me.ArregloToolStripMenuItem.Text = "Arreglo"
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(971, 641)
+        Me.ClientSize = New System.Drawing.Size(1013, 679)
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.MenuStrip1.ResumeLayout(False)

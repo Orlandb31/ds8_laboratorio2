@@ -7,11 +7,16 @@
         For i = 0 To tamaño - 1
 
             rango = InputBox("Digite la venta")
+            If rango = String.Empty Then
+                MessageBox.Show("No indroduzca un valor numerico")
+                Return
+            End If
             If (rango >= 50 And rango <= 286) Then
                 ventas(i) = rango
             Else
                 MessageBox.Show("Solo se aceptan valores mayores que 50 y menores que 286")
                 i = i - 1
+                Return
             End If
         Next
     End Sub
